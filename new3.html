@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+li:hover{
+    width:100px;
+    background:gold;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+<audio id=audio src="Death From Above 1979 - Freeze Me.mp3" controls></audio>
+<ul>
+    <li id="Death From Above 1979 - Freeze Me.mp3">Death From Above 1979 - Freeze Me</li>
+    <li id="Falling In Reverse - Popular Monster.mp3">Falling In Reverse - Popular Monster</li>
+    <li id="IAMX - The Great Shipwreck Of Life.mp3">IAMX - The Great Shipwreck Of Life</li>
+</ul>
+<script>
+var alles_li = document.getElementsByTagName("li");
+for(var i = 0; i < alles_li.length; i++){
+    alles_li[i].onclick = function(){
+        audio.src = this.id;
+        audio.play();
+    }
+}
+</script>
+</body>
+</html>
+    <p>Изменение</p>
+
